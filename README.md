@@ -1,4 +1,5 @@
 # STM32L475 潘多拉开发板 BSP 说明(Linux-Ubuntu)
+![](./doc/online-radio.png)
 
 RT-Thread 官方代码为 Windows 系统下准备. 本代码在其基础上做了适当修改可以在 Linux 系统编译,下载运行.
 
@@ -25,7 +26,13 @@ RT-Thread 官方代码为 Windows 系统下准备. 本代码在其基础上做�
 $ scons --menuconfig
 ```
 
-以上命令会根据所选模块相应修改源代码. 如果运行出现 warning, 可能是新生成的文件重置了文件换行符, 需再次改变提到文件换行符 从`CRLF` 到 `LF`
+以上命令会掉出如下配置界面:
+![](./doc/menuconfig.png)
+
+
+根据所选模块, 部分源代码文件会相应修改源代码.
+
+如果运行出现 warning, 可能是新生成的文件重置了文件换行符, 需再次改变提到文件换行符 从`CRLF` 到 `LF`
 
 - 编译
   
