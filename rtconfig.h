@@ -85,6 +85,11 @@
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
+#define RT_USING_SPI
+#define RT_USING_AUDIO
+#define RT_AUDIO_REPLAY_MP_BLOCK_SIZE 4096
+#define RT_AUDIO_REPLAY_MP_BLOCK_COUNT 2
+#define RT_AUDIO_RECORD_PIPE_SIZE 2048
 
 /* Using USB */
 
@@ -154,7 +159,7 @@
 #define PKG_USING_AT_DEVICE
 #define AT_DEVICE_USING_ESP8266
 #define AT_DEVICE_ESP8266_SAMPLE
-#define ESP8266_SAMPLE_WIFI_SSID "rtthread"
+#define ESP8266_SAMPLE_WIFI_SSID "null"
 #define ESP8266_SAMPLE_WIFI_PASSWORD "12345678"
 #define ESP8266_SAMPLE_CLIENT_NAME "uart2"
 #define ESP8266_SAMPLE_RECV_BUFF_LEN 512
@@ -195,12 +200,6 @@
 
 /* samples: kernel and components samples */
 
-
-/* Privated Packages of RealThread */
-
-
-/* Network Utilities */
-
 #define SOC_FAMILY_STM32
 #define SOC_SERIES_STM32L4
 
@@ -211,13 +210,16 @@
 /* Onboard Peripheral Drivers */
 
 #define BSP_USING_STLINK_TO_USART
+#define BSP_USING_SPI_LCD
 
 /* On-chip Peripheral Drivers */
 
 #define BSP_USING_GPIO
 #define BSP_USING_UART
 #define BSP_USING_UART1
-
+#define BSP_USING_UART2
+#define BSP_USING_SPI
+#define BSP_USING_SPI3
 /* Board extended module Drivers */
 
 
